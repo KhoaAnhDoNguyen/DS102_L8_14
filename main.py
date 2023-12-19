@@ -15,17 +15,17 @@ st.header('Input Diamond Information')
 carat = st.number_input('Insert Carat')
 
 options = ['Ideal', 'Premium', 'Good', 'Very Good', 'Fair']
-cut = st.selectbox('Select Cut's option', options)
+cut = st.selectbox("Select Cut's option", options)
 labels_options = {'Ideal' : 0, 'Premium' : 1, 'Good' : 2, 'Very Good' : 3, 'Fair' : 4}
 cut.map(labels_options)
 
 options = ['E', 'I', 'J', 'H', 'F', 'G', 'D']
-color = st.selectbox('Select Color's option', options)
+color = st.selectbox("Select Color's option", options)
 labels_options = {'E':0, 'I':1, 'J':2, 'H':3, 'F':4, 'G':5, 'D':6}
 color.map(labels_options)
 
 options = ['SI2', 'SI1', 'VS1', 'VS2', 'VVS2', 'VVS1', 'I1', 'IF']
-clarity = st.selectbox('Select Clarity's option', options)
+clarity = st.selectbox("Select Clarity's option", options)
 labels_options = {'SI2':0, 'SI1':1, 'VS1':2, 'VS2':3, 'VVS2':4, 'VVS1':5, 'I1':6, 'IF':7}
 clarity.map(labels_options)
 
