@@ -8,7 +8,7 @@ st.title('Diamond Price Prediction')
 image = Image.open('diamond-price-prediction.png')
 st.image(image)
 
-model = joblib.load('model_dt.joblib')
+model = joblib.load('model_lr.joblib')
 
 st.header('Input Diamond Information')
 carat = st.number_input('Insert Carat')
