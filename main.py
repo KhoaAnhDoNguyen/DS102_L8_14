@@ -1,5 +1,5 @@
 import streamlit as st
-import pickle as pkl
+import joblib
 from PIL import Image
 import numpy as np
 
@@ -8,8 +8,7 @@ st.title('Diamond Price Prediction')
 image = Image.open('diamond-price-prediction.png')
 st.image(image)
 
-input = open('model_dt.pkl', 'rb')
-model = pkl.load(input)
+model = joblib.load('model_dt.joblib')
 
 st.header('Input Diamond Information')
 carat = st.number_input('Insert Carat')
