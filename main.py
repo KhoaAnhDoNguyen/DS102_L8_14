@@ -38,7 +38,7 @@ z = st.number_input('Insert Z')
 if carat is not None and cut is not None and color is not None and clarity is not None and depth is not None and table is not None and x is not None and y is not None and z is not None:
     if st.button('Predict'):
         feature_vector = np.array([carat, cut_value, color_value, clarity_value, depth, table, x, y, z]).reshape(1,-1)
-        result = str((model.predict(feature_vector)[0])[0])
+        result = str((model.predict(feature_vector)))
 
         st.header('Result')
         st.text(result)
